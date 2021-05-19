@@ -1849,7 +1849,7 @@
 				<div class="header-topbar">
 					<div class="header-topbar__main">
 						<div class="social">
-							<p>Follow us</p>
+							<p class="follow">Follow us</p>
 							<ul>
 								<li>
 									<a href="https://www.facebook.com/AlBaddad1971/" title="Facebook" target="_blank">
@@ -1911,10 +1911,10 @@
 									</ul>
 								</li>
 								<li id="menu-item-3164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3164">
-                                    <a href="solutions.html">Solutions</a>
+                                    <a href="what-is-medical-technology.html">Solutions</a>
 
 								</li>
-								<li id="menu-item-2481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2481"><a href="projects.html">Projects</a>
+								<li id="menu-item-2481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2481"><a href="connecting-the-dots.html">Projects</a>
 								</li>
 								<li id="menu-item-4579" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-4579">
                                     <a href="contact.html">Contact</a></li>
@@ -2489,12 +2489,12 @@
 
                         <h4>What will I receive?</h4>
 
-                        <p>AlBaddad MedTech Monthly, news from the medical technology industry delivered to your inbox:</p>
+                        <p>MedTech Monthly, news from the medical technology industry delivered to your inbox:</p>
 
                         <ul>
                             <li><i class="far fa-check"></i> News and policy updates</li>
-                            <li><i class="far fa-check"></i> Latest Projects</li>
-                            <li><i class="far fa-check"></i> Lastest Solutions</li>
+                            <li><i class="far fa-check"></i> Latest events and industry opinion</li>
+                            <li><i class="far fa-check"></i> Blogposts and patient stories</li>
                         </ul>
 
                         <div>
@@ -2985,8 +2985,8 @@
                             <h4>Quick Links</h4>
                             <ul id="footer-quick_links-menu" class="menu">
                                 <li id="menu-item-2490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2490"><a href="about-us.html">About us</a></li>
-                                <li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a  href="projects.html">Projects</a></li>
-                                <li id="menu-item-2649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2649"><a  href="solutions.html">Solutions</a></li>
+                                <li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a  href="connecting-the-dots.html">Projects</a></li>
+                                <li id="menu-item-2649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2649"><a  href="what-is-medical-technology.html">Solutions</a></li>
                             </ul>
                         </div>
                    
@@ -3058,6 +3058,7 @@
 
 		const langEl = document.querySelector('.langWrap');
 		const link = document.querySelectorAll('a');
+        const follow = document.querySelector('.follow');
 		const titleEl = document.querySelector('.title');
 		const descrEl = document.querySelector('.description');
      
@@ -3070,8 +3071,10 @@
                ;
 
 		const attr = el.getAttribute('language');
+              follow.textContent = data[attr].follow;
 
 				titleEl.textContent = data[attr].title;
+
 				descrEl.textContent = data[attr].description; 
            
                 
@@ -3081,13 +3084,13 @@
 	var data = {
 			  "english": 
 			  {
-			    "title": "Hello World",
+			    "follow": "Follow us",
 			    "description": 
 				    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
 			  },
 			  "arabic": 
 			  {
-			    "title": "اهلا",
+			    "follow": "تابعنا",
 			    "description": 
 				    "ببببببببببببببب"
 			  },
@@ -3121,9 +3124,9 @@
             }
         };
     </script>
-	<script type="text/javascript" src="js/js-vendor.js" id="wp_theme-vendor-js-js"></script>
-	<script type="text/javascript" src="js/js-app.js" id="wp_theme-app-js-js"></script>
-	<script type="text/javascript" src="js/js-wp-embed.min.js" id="wp-embed-js"></script>
+    <script type='text/javascript' src='https://www.medtecheurope.org/wp-content/themes/ak-medtecheurope-2018/assets/js/vendor.js?ver=1620174726' id='wp_theme-vendor-js-js'></script>
+    <script type='text/javascript' src='https://www.medtecheurope.org/wp-content/themes/ak-medtecheurope-2018/assets/js/app.js?ver=1620174725' id='wp_theme-app-js-js'></script>
+    <script type='text/javascript' src='https://www.medtecheurope.org/wp-includes/js/wp-embed.min.js?ver=5.7.1' id='wp-embed-js'></script>
 
 </body>
 
